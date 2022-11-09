@@ -49,6 +49,14 @@ ion-modal ion-toolbar {
   --background: rgb(14 116 144);
   --color: white;
 }
+// modal dialog
+ion-modal {
+  --height: 80%;
+  --width: 80%;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
 // header
 .new-background-color {
   --background: linear-gradient(135deg, orange 60%, cyan);

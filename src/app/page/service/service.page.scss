@@ -1,0 +1,37 @@
+ion-title {
+  color: rgb(11, 32, 218);
+  font-weight: bold;
+  text-align: center;
+}
+.p_introl {
+  display: inline-block;
+  font-size: 30px;
+}
+.ion-toolbar {
+  display: flex;
+}
+@media (max-width: 739px) {
+  .p_introl {
+    font-size: 20px;
+  }
+  .icon-header {
+    width: 80px;
+    height: 60px;
+  }
+  ion-searchbar {
+    width: 40%;
+  }
+  ion-button {
+    width: 80px;
+    height: 35px;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .p_introl {
+    font-size: 25px;
+  }
+  ion-button {
+    width: 100px;
+    height: 50px;
+  }
+}

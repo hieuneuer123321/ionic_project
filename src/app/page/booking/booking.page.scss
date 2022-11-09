@@ -13,11 +13,53 @@ ion-searchbar {
   order: 2;
   margin-right: 10px;
 }
+.item-background-color {
+  --ion-item-background: #0fd8fcd5;
+}
+.item_list {
+  display: flex;
+}
+.p_item_list {
+  flex-grow: 7;
+  font-size: 18px;
+}
+.h3_item_list {
+  flex-grow: 3;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(9, 9, 235);
+}
+.btn_close_modal {
+  --background: red;
+  color: azure;
+}
+ion-modal {
+  --height: 50%;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+ion-modal::part(backdrop) {
+  background: rgba(209, 213, 219);
+  opacity: 1;
+}
+
+ion-modal ion-toolbar {
+  --background: rgb(14 116 144);
+  --color: white;
+}
 // header
+.new-background-color {
+  --background: linear-gradient(135deg, orange 60%, cyan);
+}
 ion-title {
   color: rgb(11, 32, 218);
   font-weight: bold;
   text-align: center;
+}
+.modal_title {
+  color: rgb(255, 255, 255);
 }
 .p_introl {
   display: inline-block;
@@ -25,7 +67,13 @@ ion-title {
 }
 .ion-toolbar {
   display: flex;
+  justify-content: space-between;
 }
+.img_logout {
+  width: 80px;
+  height: 40px;
+}
+
 @media (max-width: 739px) {
   .p_introl {
     font-size: 20px;
@@ -40,6 +88,15 @@ ion-title {
   ion-button {
     width: 80px;
     height: 35px;
+  }
+  .item_list {
+    display: block;
+  }
+  .p_item_list {
+    font-size: 12px;
+  }
+  .h3_item_list {
+    font-size: 10px;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {

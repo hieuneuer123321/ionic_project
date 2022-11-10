@@ -77,10 +77,6 @@ ion-title {
   display: flex;
   justify-content: space-between;
 }
-.img_logout {
-  width: 80px;
-  height: 40px;
-}
 
 @media (max-width: 739px) {
   .p_introl {
@@ -88,7 +84,7 @@ ion-title {
   }
   .icon-header {
     width: 80px;
-    height: 60px;
+    height: 55px;
   }
   ion-searchbar {
     width: 40%;

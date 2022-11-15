@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./management.page.scss'],
 })
 export class ManagementPage implements OnInit {
+  option = {
+    freeMode: true,
+    slidesPerView: 3.5,
+    slidesOffsetBefore: 11,
+    spaceBetween: 10,
+  };
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

@@ -34,7 +34,40 @@ ion-title {
 .acount_select {
   display: inline-block;
 }
+//nofication
+.nofication_modal {
+  --min-width: 30vw;
+}
+.nofication_modal-content {
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  margin: 0px;
+  height: 100px;
+  border-bottom: 1px solid rgb(44, 5, 237);
+}
+.nofication-text {
+  margin-left: 5px;
+}
+.nofication-title {
+  margin: 0px;
+}
 @media (max-width: 739px) {
+  .nofication_modal-img {
+    width: 60%;
+  }
+  .nofication_modal-content {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+    height: 80px;
+    border-bottom: 1px solid rgb(44, 5, 237);
+  }
+  .nofication-title {
+    font-size: 12px;
+  }
+  .nofication-description {
+    font-size: 10px;
+  }
   .acount_select_icon {
     font-size: small;
   }

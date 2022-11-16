@@ -50,6 +50,62 @@ ion-title {
 }
 .nofication-title {
   margin: 0px;
+  color: rgb(247, 31, 74);
+  font-weight: bold;
+}
+//// bell icon
+$palette-grey: #efefef;
+$palette-green: mix($palette-grey, #f84545, 10%);
+$palette-purple: mix($palette-grey, #f84545, 10%);
+.nofication_icon {
+  transform-origin: 50% 50%;
+  animation: shake 1.5s infinite;
+  cursor: pointer;
+  border-radius: 78px;
+  border: 5px solid transparent;
+  transition-property: box-shadow;
+  transition-duration: 0.25s;
+  &.read {
+    animation: none;
+    path {
+      stroke: darken($palette-grey, 25%);
+      fill: darken($palette-grey, 25%);
+    }
+  }
+  path {
+    stroke: $palette-purple;
+    fill: $palette-purple;
+    transition-property: stroke, fill;
+    transition-duration: 0.25s;
+  }
+  &:hover {
+    ~ .notification-caption::first-letter {
+      background: $palette-green;
+    }
+    path {
+      stroke: $palette-green;
+      fill: $palette-green;
+    }
+  }
+}
+@keyframes shake {
+  0%,
+  25%,
+  83%,
+  100% {
+    transform: rotatez(0deg);
+  }
+  32.5%,
+  62.5% {
+    transform: rotatez(-30deg);
+  }
+  47.5%,
+  75.5% {
+    transform: rotatez(30deg);
+  }
+}
+p {
+  margin: 0;
 }
 @media (max-width: 739px) {
   .nofication_modal-img {
@@ -77,17 +133,14 @@ ion-title {
   .p_introl {
     font-size: 20px;
   }
+  .ion_title_header {
+    margin: 0px;
+  }
   .icon-header {
-    width: 80px;
-    height: 55px;
-  }
-  ion-searchbar {
-    width: 40%;
-  }
-  ion-button {
-    width: 80px;
+    width: 45px;
     height: 35px;
   }
+
   .item_list {
     display: block;
   }

@@ -118,8 +118,18 @@
         </ion-card>
       </ion-slide>
     </ion-slides>
-
-    <ion-grid>
+    <div class="btn_group_category" (click)="onButtonGroupClick($event)">
+      <ion-button button class="btn_group_cate none"
+        ><span class="btn_group_text">Category 1</span></ion-button
+      >
+      <ion-button button class="btn_group_cate none"
+        ><span class="btn_group_text">Category 2</span>
+      </ion-button>
+      <ion-button button class="btn_group_cate none"
+        ><span class="btn_group_text">Category 3</span></ion-button
+      >
+    </div>
+    <ion-grid class="gird_service">
       <ion-row>
         <ion-col size="6" size-xs="4" size-sm="4" size-md="4" size-lg="3">
           <ion-card class="card_grid">

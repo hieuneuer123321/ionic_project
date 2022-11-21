@@ -107,6 +107,9 @@ $palette-purple: mix($palette-grey, #f84545, 10%);
 p {
   margin: 0;
 }
+.nofication_modal-img {
+  width: 50%;
+}
 @media (max-width: 739px) {
   .nofication_modal-img {
     width: 60%;
@@ -160,6 +163,21 @@ p {
     height: 50px;
   }
   .text_username_header {
+    font-size: 10px;
+  }
+  .nofication_modal-img {
+    width: 60%;
+  }
+  .nofication_modal-content {
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+    height: 80px;
+    border-bottom: 1px solid rgb(44, 5, 237);
+  }
+  .nofication-title {
+    font-size: 12px;
+  }
+  .nofication-description {
     font-size: 10px;
   }
 }

@@ -35,4 +35,9 @@ export class HomePage implements OnInit {
       this.slides.slideNext(1000);
     }, 1000);
   }
+  onButtonGroupClick($event) {
+    const clickedElement = $event.target || $event.srcElement;
+    console.log(clickedElement);
+    clickedElement.classList.toggle('active');
+  }
 }
